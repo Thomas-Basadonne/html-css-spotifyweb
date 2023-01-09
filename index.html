@@ -8,7 +8,13 @@
 	<title>SpotifyWeb</title>
 
 	<link rel="icon" href="./img/favicon.ico">
-	
+
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/utils.css">
 	<link rel="stylesheet" href="./css/style.css">
@@ -18,13 +24,47 @@
 
 <body>
 
+<!-- HEADER -->
 <header>
 <button>EFFETUA L'UPGRADE</button>
 </header>
 
 <!-- SIDEBAR -->
 <aside>
-<img src="./img/logo.svg" alt="logo">
+<img class="logo" src="./img/logo.svg" alt="logo">
+<div class="main-nav">
+	<a href="#"><i class="fa-solid fa-house"></i> Home</a>
+	<a href="#"><i class="fa-solid fa-magnifying-glass"></i> Cerca</a>
+	<a href="#"><i class="fa-solid fa-lines-leaning"></i> La tua libreria</a>
+</div>
+
+<div class="playlist">
+	<div class="crea">
+		<h2>PLAYLIST</h2>
+		<i class="fa-solid fa-plus"></i> Crea Playlist
+	</div>
+
+	<ul>
+		<li><a href="#">Nome Playlist</a></li>
+		<li><a href="#">Nome Playlist</a></li>
+		<li><a href="#">Nome Playlist</a></li>
+		<li><a href="#">Nome Playlist</a></li>
+		<li><a href="#">Nome Playlist</a></li>
+		<li><a href="#">Nome Playlist</a></li>
+		<li><a href="#">Nome Playlist</a></li>
+	</ul>
+</div>
+
+<div class="profile">
+	<div>
+		<i class="fa-regular fa-circle-down"></i> Installa app
+	</div>
+	<hr>
+	<div>
+		<!-- <img src="./img/profile.svg" alt="profilo"> -->
+		John Doe
+	</div>
+</div>
 </aside>
 
 <!-- MAIN CONTENT -->
