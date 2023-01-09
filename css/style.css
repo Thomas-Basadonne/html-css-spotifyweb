@@ -1,0 +1,60 @@
+/* HEADER */
+
+header{
+    min-height: 90px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+header>button{
+    background-color:transparent;
+    font-size: small;
+    padding: 10px 35px;
+    border-radius: 20px;
+    border: 1px solid white;
+    color: white;
+    margin-right: 10px;
+}
+
+/* SIDEBAR */
+
+aside{
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+
+/* MAIN */
+
+main{
+    margin-left: 250px;
+    
+    /* debug */
+    height: 1000px;
+    background-color: aqua;
+}
+
+
+/* FOOTER */
+
+footer{
+    min-height: 90px;
+    background-color: darkgray;
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    width: 100%;
+}
