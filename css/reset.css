@@ -25,4 +25,44 @@ video {
 a{
 	color: gray;
 	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover{
+	color: aliceblue;
+}
+
+button{
+	cursor: pointer;
+}
+
+button:hover{
+	scale: 1.1;
+}
+
+i{
+	cursor: pointer;
+	color: grey;
+}
+
+i:hover{
+	color: aliceblue;
+}
+
+main img:hover{
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.col-2>i{
+	position: relative;
+	top: 148px;
+	font-size: xx-large;
+	color: aliceblue;
+
+	display: none;
+}
+
+.col-2>img:hover i:active{
+	display: block;
 }
