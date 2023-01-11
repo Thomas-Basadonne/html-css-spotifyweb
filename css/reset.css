@@ -51,18 +51,35 @@ i:hover{
 
 main img:hover{
 	opacity: 0.5;
-	cursor: pointer;
+	/* cursor: pointer; */
+}
+.col-2{
+	position: relative;
 }
 
 .col-2>i{
-	position: relative;
+	display: none;
+}
+
+/* .col-2>.esempio{
+	position: absolute;
 	top: 148px;
+	left: 100px;
 	font-size: xx-large;
 	color: aliceblue;
 
 	display: none;
 }
 
-.col-2>img:hover i:active{
-	display: block;
+.col-2>.esempio:hover{
+	cursor: pointer;
 }
+
+.col-2>i:hover {
+	display: block;
+} 
+
+main i:hover {
+	display: block;
+	cursor: all-scroll;
+} */ 

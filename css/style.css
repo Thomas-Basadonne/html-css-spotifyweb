@@ -22,7 +22,7 @@ body{
 
 header{
     height: var(--header-height);
-    width: calc(100% - var(--sidebar-width));
+    width: calc(100vw - var(--sidebar-width));
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
@@ -53,7 +53,7 @@ aside{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem 1rem 0;
 }
 
 .logo{
@@ -107,6 +107,10 @@ aside{
     background-color: #A3A3A3;
     border-radius: 50%;
 }
+
+.sm-aside{
+    display: none;
+}
 /* MAIN */
 
 main{
@@ -121,11 +125,12 @@ nav>ul{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav>ul>li{
     padding: 1rem;
-    font-size: medium;
+    font-size: xx-small;
 }
 
 nav>ul>li:first-child {
@@ -146,21 +151,17 @@ main>div>h2{
     padding-bottom: 0.5rem;
 }
 
-.album{
-    display: flex;
-}
-
-.album>div{
-    padding-right: 1rem;
+.album>.row>div{
+    padding: 1rem;
     text-align: center;
 }
 
-.album>div>img {
+.album>.row>div>img {
     width: 250px;
     margin: 1rem 0;
 }
 
-.album>div>h3 {
+.album>.row>.col-2>h3 {
     color: #A3A3A3;
     font-size: 0.8rem;
 }
@@ -174,7 +175,7 @@ main>div>h2{
     font-size: 0.8rem;
 }
 
-.per-te>div>img {
+.per-te>.album>.row>img {
     width: 250px;
     margin: 1rem 0;
 }
@@ -188,7 +189,7 @@ main>div>h2{
     padding: .5rem 0;
 }
 
-.artisti>.album>div>img{
+.artisti>.album>.row>div>img{
     border-radius: 50%;
 }
 /* FOOTER */
@@ -338,23 +339,38 @@ footer{
 /*************
 MEDIAQUERY
 **************/
-
+/* 
 @media only screen and (max-width:992px) and (min-width:768px) {
  
-    .album>div {
-            flex-wrap: wrap;
-            flex-basis: calc((100% / 12) * 3);
-            max-width: calc((100% / 12) * 3);
-        }
+  
 }
 
 
 @media only screen and (max-width:768px) and (min-width:576px) {
-
-}
+ */
 
 
 @media only screen and (max-width:576px) {
+    header{
+        width: calc(100vw - 60px);
+    }
+    aside{
+       display: none;
+    }
+    .sm-aside{
+        height: calc(100vh - var(--footer-height));
+        width: 60px;
+        min-width: 60px;
+        overflow: auto;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem 1rem 0;
+    }
 
-  
+    .sm-aside>div>*{
+        margin: 1rem 0;
+        align-items: center;
+    }
 }
