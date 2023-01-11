@@ -248,7 +248,7 @@ footer{
 }
 
 .progress-bar{
-    width: 500px;
+    width: 25vw;
     height: 4px;
     border-radius: 1px;
     background-color: #555;
@@ -285,7 +285,7 @@ footer{
 }
 
 .volume-bar{
-    width: 150px;
+    width: 8vw;
     height: 4px;
     border-radius: 1px;
     background-color: #555;
